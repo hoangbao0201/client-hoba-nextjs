@@ -12,9 +12,9 @@ const Header = () => {
                 
                 <div className={cx("content-item")}>
                     <Navbar />
-                    <a className={cx("logo")} href="/">
+                    <Link className={cx("logo")} href="/">
                         Logo
-                    </a>
+                    </Link>
                 </div>
                 <div className={cx("content-item")}></div>
 
