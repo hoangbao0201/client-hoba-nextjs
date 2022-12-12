@@ -27,7 +27,7 @@ const StyledText = styled.span`
 
 const BreadcrumbLayout = ({ data }: any) => {
     return (
-        <div>
+        <div style={{margin: "15px 0px"}}>
             {data.map((item: any, index: any) => {
                 return (
                     <StyledItem key={index}>
