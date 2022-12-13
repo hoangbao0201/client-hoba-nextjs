@@ -35,7 +35,7 @@ const Login = () => {
 
                                 <div className={cx("form-header")}>
                                     <div className={cx("header-title")}>
-                                        <span className={cx("header-under-line")}></span> Đăng nhập
+                                        <span className={cx("header-under-line")}></span> <h3>Đăng nhập</h3>
                                     </div>
                                 </div>
 

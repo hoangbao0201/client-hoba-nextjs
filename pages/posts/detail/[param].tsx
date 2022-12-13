@@ -43,7 +43,7 @@ const Detail = () => {
 
                             <div className={cx("posts-content", "dev-col-8")}>
     
-                                <div className={cx("header-title")}>Mẫu đơn xin cấp lại căn cước công dân bị mất mới 2022</div>
+                                <h2 className={cx("header-title")}>Mẫu đơn xin cấp lại căn cước công dân bị mất mới 2022</h2>
     
                                 <div className={cx("grid-info")}>
 

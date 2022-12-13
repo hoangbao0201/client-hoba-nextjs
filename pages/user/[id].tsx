@@ -14,8 +14,19 @@ export interface UserDetailProps {
 
 }
 
-const StyledGridAvatar = styled.div`
-    
+export const StyledBadgeBlue = styled.span`
+    background-image: url("/images/badge-blue.png");
+    background-repeat: no-repeat;
+    padding: 10px;
+    background-size: contain;
+    display: block;
+    transform: translateY(5%);
+`
+
+export const StyledSpace = styled.div`
+    width: 100%;
+    height: 0px;
+    margin: 10px 0px;
 `
 
 const UserDetail = () => {
@@ -40,21 +51,22 @@ const UserDetail = () => {
                     <div className={cx("container")}>
                         <div className={cx("content")}>
 
-                            <div className={cx("header-form")}>
+                            <div className={cx("head-form")}>
 
-                                <StyledGridAvatar>
-                                    <img src='/images/avatar-default-2.png' className={cx("avatar")}/>
-                                </StyledGridAvatar>
+                                <div className={cx("grid-avatar")}>
+                                    <img src='/images/avatar-default-2.png' alt='avatar' className={cx("avatar")}/>
+                                </div>
 
                                 <div className={cx("grid-info")}>
 
                                     <div className={cx("info-head")}>
 
                                         <div className={cx("head-name")}>
-                                            <span>hoangbao0201</span>
-                                            <span className={cx("badge-blue")} />
+                                            <h2 className={cx("name")}>hoangbao0201</h2>
+                                            <StyledBadgeBlue />
                                         </div>
-                                        <div className={cx("head-action")}>
+
+                                        <div className={cx("head-button")}>
                                             <div className={cx("button-action", "button-follow")}>
                                                 Theo dõi
                                             </div>
@@ -70,6 +82,8 @@ const UserDetail = () => {
                                         </div>
 
                                     </div>
+
+                                    {/* <StyledSpace /> */}
 
                                     <div className={cx("grid-count")}>
 
@@ -90,16 +104,38 @@ const UserDetail = () => {
                                     </div>
 
                                     <div className={cx("grid-description")}>
-                                        <span className={cx("description-text")}>Nguyễn Hoàng Bảo</span>
+                                        <h3 className={cx("description-text")}>Nguyễn Hoàng Bảo</h3>
                                     </div>
 
                                 </div>
 
                             </div>
 
+                            <div className={cx("grid-count-mobile")}>
+
+                                <div className={cx('grid-posts', "dev-col-4")}>
+                                    <div className={cx("posts-number")}>1,362</div>
+                                    <span>bài viết</span>
+                                </div>
+                                <div className={cx('grid-follow', "dev-col-4")}>
+                                    <div className={cx("follow-number")}>6,7M</div>
+                                    <span>người theo dõi</span>
+                                </div>
+                                <div className={cx('grid-watching', "dev-col-4")}>
+                                    <div className={cx("watching-number")}>5</div>
+                                    <span>Đang theo dõi</span>
+                                </div>
+
+                            </div>
+
+                            <div className={cx('content-form')}>
+                                <div></div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
+
                 <Footer />
             </main>
         </div>

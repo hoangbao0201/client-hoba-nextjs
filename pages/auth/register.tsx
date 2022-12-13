@@ -52,7 +52,7 @@ const Register = () => {
 
                                 <div className={cx("form-header")}>
                                     <div className={cx("header-title")}>
-                                        <span className={cx("header-under-line")}></span> Đăng kí
+                                        <span className={cx("header-under-line")}></span> <h3>Đăng kí</h3>
                                     </div>
                                 </div>
 
