@@ -17,7 +17,7 @@ export interface UserDetailProps {
 export const StyledBadgeBlue = styled.span`
     background-image: url("/images/badge-blue.png");
     background-repeat: no-repeat;
-    padding: 10px;
+    padding: 12px;
     background-size: contain;
     display: block;
     transform: translateY(5%);
@@ -54,6 +54,7 @@ const UserDetail = () => {
                             <div className={cx("head-form")}>
 
                                 <div className={cx("grid-avatar")}>
+                                    {/* <canvas className={cx("round-avatar")}></canvas> */}
                                     <img src='/images/avatar-default-2.png' alt='avatar' className={cx("avatar")}/>
                                 </div>
 

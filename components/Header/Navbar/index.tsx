@@ -44,6 +44,21 @@ const Navbar = () => {
                                     {iconRegister}Đăng kí
                                 </div>
                             </Link>
+                            <Link href="/posts/detail/nguyen-hoang-bao">
+                                <div className={cx("navbar-item")}>
+                                    {iconRegister}Bài viết
+                                </div>
+                            </Link>
+                            <Link href="/user/hoangbao0201">
+                                <div className={cx("navbar-item")}>
+                                    {iconRegister}hoangbao0201
+                                </div>
+                            </Link>
+                            <Link href="/posts/create">
+                                <div className={cx("navbar-item")}>
+                                    {iconRegister}Create Post
+                                </div>
+                            </Link>
 
                         </div>
 
