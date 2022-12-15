@@ -1,0 +1,39 @@
+.image {
+    padding-top: 100%;
+    background-size: cover;
+    background-color: #ccc;
+}
+
+// Button Navigation
+
+.button-prev,
+.button-next {
+    padding: 20px 10px;
+    cursor: pointer;
+    z-index: 1000;
+    // top: 50%;
+    top: 50%;
+    border-radius: 50%;
+    border: 0px;
+    position: absolute;
+    transform: translateY(50%);
+    
+    &>svg {
+        width: 27px;
+        height: 27px;
+        padding: 3px;
+        border-radius: 50%;
+        background-color: #ffff;
+        box-shadow: 0px 0px 6px #ccc;
+        display: block;
+        filter: blur(0.5px);
+    }
+}
+
+.button-next {
+    right: 0px;
+}
+
+.button-prev {
+    left: 0px;
+}

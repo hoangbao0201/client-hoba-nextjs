@@ -7,6 +7,7 @@ import styles from "../styles/Home.module.scss";
 const cx = classNames.bind(styles);
 
 import CardPlacehoders from "../components/Layout/Placehoders/CardPlacehoders";
+import CardPostLayout from "../components/Layout/CardPostLayout";
 
 export default function Home() {
     return (
@@ -25,12 +26,7 @@ export default function Home() {
                 <div className={cx("wrapper")}>
                     <div className={cx("container")}>
                         <div className={cx("content")}>
-                            <CardPlacehoders />
-                            <CardPlacehoders />
-                            <CardPlacehoders />
-                            <CardPlacehoders />
-                            <CardPlacehoders />
-                            <CardPlacehoders />
+                            <CardPostLayout />
                             <CardPlacehoders />
                         </div>
                     </div>
