@@ -70,9 +70,9 @@ const CardPostLayout = () => {
                     <div className={cx("grid-text")}>
                         <span className={cx("text")}>
                             Cologne you were such a beautiful city! I had so
-                            much fun at the Christmas market 🎄Our BLINKs help
+                            much fun at the Christmas market Our BLINKs help
                             beat the cold! I can't wait to be back to see you
-                            all . Love you♥️
+                            all . Love you
                         </span>
                     </div>
                     <div className={cx("group-images")}>
