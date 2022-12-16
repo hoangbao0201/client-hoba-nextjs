@@ -19,9 +19,10 @@
     display: flex;
     align-items: center;
 
-    &>.avatar {
+    .link-avatar > .avatar {
         width: 40px;
         height: 40px;
+        display: block;
         object-fit: cover;
         border-radius: 50%;
         background-color: #ccc;
@@ -30,9 +31,8 @@
 
 .grid-info {
     margin-left: 10px;
-    
 
-    .link-name>.name {
+    .link-name > .name {
         font-size: 17px;
         font-weight: 500;
         margin: 0px;
@@ -57,10 +57,77 @@
 }
 
 .content {
-
     .group-images > .image {
         padding-top: 100%;
         background-size: cover;
         background-color: #ccc;
+    }
+}
+
+// Action
+
+.grid-event {
+    margin: 10px 0px;
+    padding: 0px 12px;
+
+    display: flex;
+    align-items: center;
+
+    // gap: 8px;
+
+    .action-collection,
+    .action-comment,
+    .action-heart {
+        padding: 8px;
+        cursor: pointer;
+
+        svg {
+            width: 24px;
+            height: 24px;
+            // fill: #262626;
+            display: block;
+
+        }
+    }
+}
+
+.action-heart.heart {
+    svg {
+        fill: rgb(237, 73, 86) !important;
+        animation: 0.45s heart-animation ease-in-out forwards;
+    }
+    &:hover svg {
+        fill: rgb(237, 73, 86) !important;
+    }
+}
+
+.action-collection {
+    margin-left: auto;
+}
+
+// .action-heart:hover,
+// .action-comment:hover,
+.action-collection:hover {
+    // margin-left: 0px;
+
+    svg {
+        fill: red !important;
+    }
+}
+
+// Keyframes
+
+@keyframes heart-animation {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
     }
 }

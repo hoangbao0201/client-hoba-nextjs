@@ -9,6 +9,73 @@ const cx = classNames.bind(styles);
 import CardPlacehoders from "../components/Layout/Placehoders/CardPlacehoders";
 import CardPostLayout from "../components/Layout/CardPostLayout";
 
+const listPosts = [
+    {
+        author: {
+            name: "hoangbao0201",
+            avatar: {
+                url: "https://res.cloudinary.com/djrbd6ftt/image/upload/v1671084245/hoba-web/avatar/avatar-default-2_tmhleu.jpg",
+                public_id: "hoba-web/avatar/avatar-default-2_tmhleu.jpg",
+            },
+        },
+        content: {
+            text: "",
+            images: [
+                {
+                    url: "https://res.cloudinary.com/djrbd6ftt/image/upload/v1671114015/hoba-web/post-images/319005973_484073633711200_3245131900487081441_n_pc2mqh.jpg",
+                    public_id: "",
+                },
+                {
+                    url: "https://res.cloudinary.com/djrbd6ftt/image/upload/v1671114016/hoba-web/post-images/318961815_700354774753403_2923789161523616319_n_uvt3xx.jpg",
+                    public_id: "",
+                },
+                {
+                    url: "https://res.cloudinary.com/djrbd6ftt/image/upload/v1671114015/hoba-web/post-images/319322379_2189521184588376_7227291141648726782_n_qvpuhp.jpg",
+                    public_id: "",
+                },
+                {
+                    url: "https://res.cloudinary.com/djrbd6ftt/image/upload/v1671114015/hoba-web/post-images/319119788_233108139050796_350200225400317452_n_nmzp7a.jpg",
+                    public_id: "",
+                },
+                {
+                    url: "https://res.cloudinary.com/djrbd6ftt/image/upload/v1671114015/hoba-web/post-images/319506918_1241159693129180_773097323842336567_n_rsd5ui.jpg",
+                    public_id: "",
+                },
+                {
+                    url: "https://res.cloudinary.com/djrbd6ftt/image/upload/v1671114015/hoba-web/post-images/318974712_1277019439539641_3114040973139100477_n_eghj2v.jpg",
+                    public_id: "",
+                },
+            ],
+        },
+    },
+    {
+        author: {
+            name: "_hoangbaodemo_",
+            avatar: {
+                url: "https://res.cloudinary.com/djrbd6ftt/image/upload/v1671084245/hoba-web/avatar/avatar-default-2_tmhleu.jpg",
+                public_id: "hoba-web/avatar/avatar-default-2_tmhleu.jpg",
+            },
+        },
+        content: {
+            text: "",
+            images: [
+                {
+                    url: "https://res.cloudinary.com/djrbd6ftt/image/upload/v1671200513/hoba-web/post-images/319461882_187050807319663_6833254700632914734_n_wjkoaa.jpg",
+                    public_id: "",
+                },
+                {
+                    url: "https://res.cloudinary.com/djrbd6ftt/image/upload/v1671200513/hoba-web/post-images/319705842_820629305675693_8261954380334822058_n_fbcoc3.jpg",
+                    public_id: "",
+                },
+                {
+                    url: "https://res.cloudinary.com/djrbd6ftt/image/upload/v1671200513/hoba-web/post-images/319506918_1241159693129180_773097323842336567_n_yiuzu3.jpg",
+                    public_id: "",
+                },
+            ],
+        },
+    },
+]
+
 export default function Home() {
     return (
         <div>
@@ -26,7 +93,10 @@ export default function Home() {
                 <div className={cx("wrapper")}>
                     <div className={cx("container")}>
                         <div className={cx("content")}>
-                            <CardPostLayout />
+                            {/* <CardPostLayout /> */}
+                            {listPosts.map((post, index) => {
+                                return <CardPostLayout key={index} data={post}/>
+                            })}
                             <CardPlacehoders />
                         </div>
                     </div>
